@@ -1,1 +1,2257 @@
-My Page
+
+<html>
+
+<style>
+body {
+  margin-top: 40px;
+  margin-right: 100px;
+  margin-bottom: 10px;
+  margin-left: 30px;}
+
+  box{
+
+  }
+
+</style>
+
+<head>
+  <title>Estudi del model d'Einstein i el de Debye</title>
+</head>
+
+
+<body>
+<H1 align="center">Estudi del model del s&ogravelid d'Einstein i de Debye</H1>
+
+<H2>Introducci&oacute hist&ograverica</H2>
+
+<div class="body">
+<p style="text-align:justify"> L'estudi de la calor espec&iacutefica marca l'inici de la f&iacutesica de l'estat s&ogravelid al segle XX.
+  La mec&agravenica cl&agravessica ofer&iumla una justificaci&oacute del valor de la calor espec&iacutefica, que
+  explicava que la calor espec&iacutefica fos independent de la temperatura, tal com
+  se'n deriva de la Llei de Dulong i Petit. Tanmateix, els experiments mostraven un comportament
+  an&ogravemal a baixes temperatures, de manera que la capacitat calor&iacutefica en depenia i tendia a 0
+  al zero absolut. En canvi, per a temperatures altes la calor tendia a les prediccions de Dulong i Petit.
+</p>
+
+<p style="text-align:justify">
+  Fou el 1907 quan Einstein propos&agrave una nova teoria que donava una explicaci&oacute al comportament
+  de la calor espec&iacutefica per baixes tempertures, fent &uacutes de les noves idees de la quantitzaci&oacute de Planck.
+</p>
+
+<p style="text-align:justify">
+  Les prediccions d'aquest model, per&ograve, no eren del tot prou ajustades. Fou m&eacutes tard, el 1912, quan Debye aprofitant
+  els treballs de Max Planck i Albert Einstein, millor&agrave la teoria d'Einstein i obtingu&eacute una millor aproximaci&oacute.
+</p>
+
+<p style="text-align:justify">
+  Aquest treball pret&eacuten fer un estudi <I>grosso modo</I> dels dos models (Einstein i Debye) per al cas d'una cadena
+  monoat&ogravemica de N &agravetoms, tot fent una simulaci&oacute dels moviments dels &agravetoms i el c&agravelcul de la seva calor espec&iacutefica
+  fent servir diferents m&egravetodes.
+</p>
+
+</div>
+
+<p>&nbsp;</p>
+
+<div style = "padding: 10px; border: 2px solid black; margin: 0;" >
+
+<H3><center>Comentaris inicials de l'estudi</center></H3>
+
+<p style="text-align:justify">
+Les simulacions d'aquest estudi estan fetes totes a partir de les dades d'una cadena de N &agravetoms de sodi (Na).
+Aix&iacute els valors de les constants que s'usen (par&agravemetre de xarxa, massa i K<sub>el</sub>) s&oacuten:
+</p>
+
+<p>Massa</p>
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>m</mi>
+          <mo>=</mo>
+          <mn>4</mn>
+          <mo>&#x22C5;<!-- ⋅ --></mo>
+          <msup>
+            <mn>10</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>26</mn>
+            </mrow>
+          </msup>
+          <mi>k</mi>
+          <mi>g</mi>
+        </mrow>
+      </mstyle>
+    </math>
+  </center>
+
+<p>Par&agravemetre de xarxa</p>
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>c</mi>
+          <mo>=</mo>
+          <mn>4.2906</mn>
+          <mo>&#x22C5;<!-- ⋅ --></mo>
+          <msup>
+            <mn>10</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>10</mn>
+            </mrow>
+          </msup>
+          <mi>m</mi>
+        </mrow>
+      </mstyle>
+    </math>
+  </center>
+
+<p>Com que el sodi es una c&uacutebica interior, la dist&agravencia d'enlla&ccedil &eacutes, doncs:</p>
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>a</mi>
+          <mo>=</mo>
+          <mfrac>
+            <msqrt>
+              <mn>3</mn>
+            </msqrt>
+            <mn>2</mn>
+          </mfrac>
+          <mi>c</mi>
+          <mo>;</mo>
+        </mrow>
+      </mstyle>
+    </math>
+  </center>
+
+<p>La velocitat del so al sodi, &eacutes:</p>
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>v</mi>
+          <mi>s</mi>
+          <mo>=</mo>
+          <mn>3200</mn>
+          <mtext>&#xA0;</mtext>
+          <mfrac>
+            <mi>m</mi>
+            <mi>s</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </math>
+  </center>
+
+<p>A partir de la velocitat del sodi, podem trobar la constant d'elasticitat a partir de la expressi&oacute:</p>
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>w</mi>
+          <mo>=</mo>
+          <mn>2</mn>
+          <msub>
+            <mi>w</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>0</mn>
+            </mrow>
+          </msub>
+          <mtext>&#xA0;</mtext>
+          <mrow>
+            <mo>|</mo>
+            <mrow>
+              <mi>sin</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mrow>
+                <mo>(</mo>
+                <mfrac>
+                  <mrow>
+                    <mi>k</mi>
+                    <mi>a</mi>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>|</mo>
+          </mrow>
+          <mo>=</mo>
+          <mn>2</mn>
+          <msqrt>
+            <mfrac>
+              <msub>
+                <mi>K</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>e</mi>
+                  <mi>l</mi>
+                </mrow>
+              </msub>
+              <mi>m</mi>
+            </mfrac>
+          </msqrt>
+          <mtext>&#xA0;</mtext>
+          <mrow>
+            <mo>|</mo>
+            <mrow>
+              <mi>sin</mi>
+              <mo>&#x2061;<!-- ⁡ --></mo>
+              <mrow>
+                <mo>(</mo>
+                <mfrac>
+                  <mrow>
+                    <mi>k</mi>
+                    <mi>a</mi>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>|</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </math>
+  </center>
+
+<p>Com que al l&iacutemit quan k&rarr;0, es t&eacute que:</p>
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>w</mi>
+          <mo>=</mo>
+          <mi>k</mi>
+          <mtext>&#xA0;</mtext>
+          <msub>
+            <mi>v</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>s</mi>
+              <mi>o</mi>
+            </mrow>
+          </msub>
+        </mrow>
+      </mstyle>
+    </math>
+  </center>
+
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <munder>
+            <mo movablelimits="true" form="prefix">lim</mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>k</mi>
+              <mo stretchy="false">&#x2192;<!-- → --></mo>
+              <mn>0</mn>
+            </mrow>
+          </munder>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>w</mi>
+          </mrow>
+          <mo>=</mo>
+          <mn>2</mn>
+          <msqrt>
+            <mfrac>
+              <msub>
+                <mi>K</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>e</mi>
+                  <mi>l</mi>
+                </mrow>
+              </msub>
+              <mi>m</mi>
+            </mfrac>
+          </msqrt>
+          <mtext>&#xA0;</mtext>
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>k</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mi>a</mi>
+            </mrow>
+            <mn>2</mn>
+          </mfrac>
+          <mtext>&#xA0;</mtext>
+          <mtext>&#xA0;</mtext>
+          <mo stretchy="false">&#x27F9;<!-- ⟹ --></mo>
+          <mtext>&#xA0;</mtext>
+          <mtext>&#xA0;</mtext>
+          <msub>
+            <mi>v</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>s</mi>
+              <mi>o</mi>
+            </mrow>
+          </msub>
+          <mo>=</mo>
+          <mi>a</mi>
+          <msqrt>
+            <mfrac>
+              <msub>
+                <mi>K</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>e</mi>
+                  <mi>l</mi>
+                </mrow>
+              </msub>
+              <mi>m</mi>
+            </mfrac>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </math>
+  </center>
+
+<p>A partir d'aquesta darrera expressi&oacute s'obt&eacute que la constant el&agravestica &eacutes:</p>
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>K</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>e</mi>
+              <mi>l</mi>
+            </mrow>
+          </msub>
+          <mo>=</mo>
+          <mi>m</mi>
+          <msup>
+            <mrow>
+              <mo>(</mo>
+              <mfrac>
+                <msub>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>s</mi>
+                  </mrow>
+                </msub>
+                <mi>a</mi>
+              </mfrac>
+              <mo>)</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+            </mrow>
+          </msup>
+        </mrow>
+      </mstyle>
+    </math>
+  </center>
+
+</div>
+
+<p>&nbsp;</p>
+
+<H2>Model d'Einstein</H2>
+
+<div class="body">
+  <p style="text-align:justify">
+  El model d'Einstein &eacutes un model que es fonamenta en dues hip&ogravetesis:
+  <OL>
+  <LI>
+  Cada &agravetom &eacutes un oscil&middotlador harm&ogravenic independent de freq&uuml&egravencia w<sub>e</sub> . </LI>
+  <LI>
+  Tots els &agravetoms oscil&middotlen amb la mateixa freq&uuml&egravencia. </LI>
+  </p>
+  </OL>
+
+  <p style="text-align:justify">
+  El moviment dels &agravetoms es pot representar f&agravecilment desenvolupant un codi MATLAB&reg, que &eacutes basa
+  en el fet que el moviment dels &agravetoms ser&agrave un moviment oscil&middotlatori de freq&uuml&egravencia w, &eacutes a dir,
+  de la forma:
+  </p>
+
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>x</mi>
+            <mi>i</mi>
+          </msub>
+          <mo>=</mo>
+          <msub>
+            <mi>A</mi>
+            <mi>i</mi>
+          </msub>
+          <msup>
+            <mi>e</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mtext>&#xA0;</mtext>
+              <mi>i</mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>w</mi>
+                <mi>e</mi>
+              </msub>
+              <mtext>&#xA0;</mtext>
+              <mo>&#xB7;</mo>
+              <mtext>&#xA0;</mtext>
+              <mi>t</mi>
+              <mtext>&#xA0;</mtext>
+              <mo>+</mo>
+              <mtext>&#xA0;</mtext>
+              <msub>
+                <mi>&#x03D5;<!-- ϕ --></mi>
+                <mn>0</mn>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </msup>
+        </mrow>
+      </mstyle>
+    </math> <!--    equació del moviment dels àtoms a Einstein-->
+  </center>
+
+  <p style="text-align:justify">
+  Es presenta a continuaci&oacute la simulaci&oacute del moviment dels &agravetoms en una cadena unidimensional de N &agravetoms:
+  </p>
+
+  <center>
+    <img src="AnimationEinstein.gif"/>:
+  </center>
+
+  <p style="text-align:justify">
+    Vegeu el codi MATLAB&reg de la simulaci&oacute <a href=Einstein.html>(codi MATLAB&reg)</a>.
+  </p>
+
+  <p>&nbsp;</p>
+
+  <big><U>C&agravelcul de la Calor espec&iacutefica en el model d'Einstein </U></big>
+  <p style="text-align:justify">
+  El c&agravelcul de la calor espec&iacutefica en el cas del model d'Einstein, es fa tot tenint en compte que l'energia de la cadena ser&agrave N
+  vegades el valor mig de l'energia d'un oscil&middotlador hamr&agravenic simple de freq&uuml&egravencia w<sub>e</sub> i amplitud A<sub>i</sub>.
+  </p>
+
+  <p style="text-align:justify">
+    A partir dels valors propis de l'energia
+      <center>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <mstyle displaystyle="true" scriptlevel="0">
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>E</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>=</mo>
+            <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+            <mi>&#x03C9;<!-- ω --></mi>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi>n</mi>
+                <mo>+</mo>
+                <mfrac>
+                  <mn>1</mn>
+                  <mn>2</mn>
+                </mfrac>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+          </mrow></mstyle>
+        </math>
+      </center>
+  </p>
+
+  <p style="text-align:justify">
+    I a partir de la funci&oacute de partici&oacute can&ogravenica, s'obt&eacute que el valor mig de l'energia ve donat per
+      <center>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <mstyle displaystyle="true" scriptlevel="0">
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mrow>
+                  <mo>&#x27E8;</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>E</mi>
+                  </mrow>
+                  <mo>&#x27E9;</mo>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                  <mi>D</mi>
+                </mrow>
+              </msub>
+              <mo>=</mo>
+              <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+              <mi>&#x03C9;<!-- ω --></mi>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <msub>
+                    <mi>n</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>B</mi>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">(</mo>
+                  <mi>&#x03B2;<!-- β --></mi>
+                  <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mo stretchy="false">)</mo>
+                  <mo>+</mo>
+                  <mfrac>
+                    <mn>1</mn>
+                    <mn>2</mn>
+                  </mfrac>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mo>,</mo>
+              <mtext>&#xA0;</mtext>
+              <mtext>&#xA0;</mtext>
+              <mtext>&#xA0;</mtext>
+              <mi>o</mi>
+              <mi>n</mi>
+              <mtext>&#xA0;</mtext>
+              <mtext>&#xA0;</mtext>
+              <mtext>&#xA0;</mtext>
+              <msub>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>B</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>&#x03B2;<!-- β --></mi>
+              <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+              <mi>&#x03C9;<!-- ω --></mi>
+              <mo stretchy="false">)</mo>
+              <mo>=</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mrow>
+                  <msup>
+                    <mi>e</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>&#x03B2;<!-- β --></mi>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                      <mi>&#x03C9;<!-- ω --></mi>
+                    </mrow>
+                  </msup>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mn>1</mn>
+                </mrow>
+              </mfrac>
+            </mrow>
+          </mstyle>
+        </math>
+      </center>
+  </p>
+
+  <p style="text-align:justify">
+  Aix&iacute l'energia de la cadena ser&agrave:
+  </p>
+
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mrow>
+              <mo>&#x27E8;</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>E</mi>
+              </mrow>
+              <mo>&#x27E9;</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>c</mi>
+              <mi>a</mi>
+              <mi>d</mi>
+              <mi>e</mi>
+              <mi>n</mi>
+              <mi>a</mi>
+              <mtext>&#xA0;</mtext>
+              <mi>N</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>a</mi>
+              <mi>t</mi>
+                <mi>&#xF2</mi>
+              <mi>m</mi>
+              <mi>i</mi>
+              <mi>c</mi>
+              <mi>a</mi>
+            </mrow>
+          </msub>
+          <mo>=</mo>
+          <munderover>
+            <mo>&#x2211;<!-- ∑ --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>n</mi>
+              <mo>=</mo>
+              <mn>0</mn>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>N</mi>
+            </mrow>
+          </munderover>
+          <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+          <msub>
+            <mi>&#x03C9;<!-- ω --></mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>e</mi>
+            </mrow>
+          </msub>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>B</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>&#x03B2;<!-- β --></mi>
+              <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+              <msub>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>e</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mo>=</mo>
+          <mi>N</mi>
+          <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+          <msub>
+            <mi>&#x03C9;<!-- ω --></mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>e</mi>
+            </mrow>
+          </msub>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <msub>
+                <mi>n</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>B</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">(</mo>
+              <mi>&#x03B2;<!-- β --></mi>
+              <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+              <msub>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>e</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+              <mo>+</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mn>2</mn>
+              </mfrac>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </math>
+  </center>
+
+  <p>&nbsp;</p>
+
+  <p style="text-align:justify">
+  A partir d'aqu&iacute s'obt&eacute el valor de la calor espec&iacutefica derivant l'energia promig obtinguda respecte de T.
+  D'aquesta manera, s'obt&eacute la seg&uumlent expressi&oacute anal&iacutetica:
+
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>C</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>c</mi>
+              <mi>a</mi>
+              <mi>d</mi>
+              <mi>e</mi>
+              <mi>n</mi>
+              <mi>a</mi>
+              <mtext>&#xA0;</mtext>
+              <mn>1</mn>
+              <mi>D</mi>
+            </mrow>
+          </msub>
+          <mo>=</mo>
+          <mfrac>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mo fence="false" stretchy="false">&#x27E8;<!-- ⟨ --></mo>
+              <mi>E</mi>
+              <msub>
+                <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>c</mi>
+                  <mi>a</mi>
+                  <mi>d</mi>
+                  <mi>e</mi>
+                  <mi>n</mi>
+                  <mi>a</mi>
+                </mrow>
+              </msub>
+            </mrow>
+            <mrow>
+              <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+              <mi>T</mi>
+            </mrow>
+          </mfrac>
+          <mo>=</mo>
+          <mi>N</mi>
+          <msub>
+            <mi>K</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>B</mi>
+            </mrow>
+          </msub>
+          <msup>
+            <mrow>
+              <mo>(</mo>
+              <mrow>
+                <mi>&#x03B2;<!-- β --></mi>
+                <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                <msub>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>e</mi>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mo>)</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mn>2</mn>
+            </mrow>
+          </msup>
+          <mtext>&#xA0;</mtext>
+          <mfrac>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>&#x03B2;<!-- β --></mi>
+                <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                <msub>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>e</mi>
+                  </mrow>
+                </msub>
+              </mrow>
+            </msup>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <msup>
+                <mi>e</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>&#x03B2;<!-- β --></mi>
+                  <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                  <msub>
+                    <mi>&#x03C9;<!-- ω --></mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>e</mi>
+                    </mrow>
+                  </msub>
+                </mrow>
+              </msup>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+              <msup>
+                <mo stretchy="false">)</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msup>
+            </mrow>
+          </mfrac>
+          <mspace linebreak="newline" />
+        </mrow>
+      </mstyle>
+    </math>
+  </center>
+
+  </p>
+
+  <p style="text-align:justify">
+  Si es fa el l&iacutemit de la C quan T tendeix a infinit, s'obtenen tal com s'esperava els resultats que previa la Llei de Dulong i Petit.
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mstyle displaystyle="true" scriptlevel="0">
+    <mrow class="MJX-TeXAtom-ORD">
+      <munder>
+        <mo movablelimits="true" form="prefix">lim</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mi>T</mi>
+          <mo stretchy="false">&#x2192;<!-- → --></mo>
+          <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+        </mrow>
+      </munder>
+      <mrow>
+        <mo>(</mo>
+        <mfrac>
+          <msub>
+            <mi>C</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>c</mi>
+              <mi>a</mi>
+              <mi>d</mi>
+              <mi>e</mi>
+              <mi>n</mi>
+              <mi>a</mi>
+              <mtext>&#xA0;</mtext>
+              <mn>1</mn>
+              <mi>D</mi>
+            </mrow>
+          </msub>
+          <msub>
+            <mi>K</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>B</mi>
+            </mrow>
+          </msub>
+        </mfrac>
+        <mo>)</mo>
+      </mrow>
+      <mo>=</mo>
+      <mi>N</mi>
+    </mrow>
+    </mstyle>
+    </math>
+  </center>
+  </p>
+
+  <p style="text-align:justify">
+    A continuaci&oacute, es mostra la representaci&oacute gr&agravefica de la C en funci&oacute de la T per al c&agravelcul usant les expressions
+    anal&iacutetiques anteriors i per al c&agravelcul amb la derivada numèrica de l'energia.
+  </p>
+
+  <center>
+  <img src="Error_01.png"/>:
+  </center>
+
+  <p style="text-align:justify">
+    A continuaci&oacute, es presenta la gr&agravefica de l'error entre el c&agravelcul amb la derivada num&egraverica i la derivada anal&iacutetica.
+  </p>
+
+  <center>
+  <img src="Error_02.png"/>:
+  </center>
+
+  <p style="text-align:justify">
+  Vegeu el codi MATLAB&reg del c&agravelcul de la calor espec&iacutefica amb el model d'Einstein <a href=Error.html>(codi MATLAB)</a>.
+  </p>
+
+  <p style="text-align:justify">
+    Aquests resultats, s'ajusten prou b&eacute als resultats experimentals, malgrat no siguin exactes a baixes temperatures.
+    &Eacutes per aquesta ra&oacute que el model d'Einsein marc&agrave un abans i un despr&eacutes a la f&iacutesica de l'estat s&ogravelid.
+  </p>
+
+</div>
+
+  <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+
+<H2>Model de Debye</H2>
+  <p style="text-align:justify">
+  El model de Debye &eacutes una millora del model d'Einstein pel que fa a la depend&egravencia de C respecte la temperatura a baixes
+  temperatures, que &eacutes proporcional a T<sup>3</sup>. En aquest cas, per&ograve, es tracten les vibracions com fonons en una caixa, a difer&egravencia
+  del model d'oscil&middotladors harm&ogravenics simples independents del model d'Einstein. Aix&iacute, gran part del desenvolupament te&ograveric &eacutes id&egraventic.
+  Tan sols canvia el fet que en aquest cas hi ha diferents modes normals, la freq&uuml&egravencia dels quals no &eacutes sempre la mateixa, sin&oacute que
+  ve donada per la relaci&oacute de dispersi&oacute:
+    <center>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>w</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>=</mo>
+            <mn>2</mn>
+            <msub>
+              <mi>w</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>0</mn>
+              </mrow>
+            </msub>
+            <mtext>&#xA0;</mtext>
+            <mrow>
+              <mo>|</mo>
+              <mrow>
+                <mi>s</mi>
+                <mi>i</mi>
+                <mi>n</mi>
+                <mrow>
+                  <mo>(</mo>
+                  <mfrac>
+                    <mrow>
+                      <msub>
+                        <mi>k</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msub>
+                      <mi>a</mi>
+                    </mrow>
+                    <mn>2</mn>
+                  </mfrac>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+            <mo>,</mo>
+            <mtext>&#xA0;</mtext>
+            <mtext>&#xA0;</mtext>
+            <mi>o</mi>
+            <mi>n</mi>
+            <mtext>&#xA0;</mtext>
+            <mtext>&#xA0;</mtext>
+            <msub>
+              <mi>k</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <mo>=</mo>
+            <mn>0</mn>
+            <mo>,</mo>
+            <mfrac>
+              <mrow>
+                <mn>2</mn>
+                <mi>&#x03C0;<!-- π --></mi>
+              </mrow>
+              <mi>L</mi>
+            </mfrac>
+            <mo>,</mo>
+            <mo>.</mo>
+            <mo>.</mo>
+            <mo>.</mo>
+            <mo>,</mo>
+            <mfrac>
+              <mrow>
+                <mn>2</mn>
+                <mi>&#x03C0;<!-- π --></mi>
+              </mrow>
+              <mi>a</mi>
+            </mfrac>
+          </mrow>
+        </mstyle>
+      </math>
+    </center>
+  </p>
+
+  <p style="text-align:justify">
+  El moviment dels &agravetoms de la cadena, separats per una dist&agravencia a, en aquest cas, es pot representar desenvolupant un codi MATLAB&reg, que es basa
+  en el fet que el moviment dels &agravetoms ser&agrave un moviment oscil&middotlatori amb contribucions de tots els modes normals (N modes normals, un per &agravetom), &eacutes a dir,
+  de la forma:
+    <center>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>x</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+              </mrow>
+            </msub>
+            <mo>=</mo>
+            <munderover>
+              <mo>&#x2211;<!-- ∑ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>=</mo>
+                <mi>o</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>N</mi>
+              </mrow>
+            </munderover>
+            <msub>
+              <mi>A</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+            <msup>
+              <mi>e</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>i</mi>
+                <mo stretchy="false">(</mo>
+                <msub>
+                  <mi>w</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mo>&#xB7;</mo>
+                <mi>t</mi>
+                <mtext>&#xA0;</mtext>
+                <mo>&#x2212;<!-- − --></mo>
+                <mtext>&#xA0;</mtext>
+                <msub>
+                  <mi>k</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mo>&#xB7;</mo>
+                <mi>x</mi>
+                <mtext>&#xA0;</mtext>
+                <mo>+</mo>
+                <mtext>&#xA0;</mtext>
+                <msub>
+                  <mi>&#x03D5;<!-- ϕ --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>0</mn>
+                  </mrow>
+                </msub>
+                <mo stretchy="false">)</mo>
+              </mrow>
+            </msup>
+            <mo>,</mo>
+            <mtext>&#xA0;</mtext>
+            <mtext>&#xA0;</mtext>
+            <mi>o</mi>
+            <mi>n</mi>
+            <mtext>&#xA0;</mtext>
+            <mtext>&#xA0;</mtext>
+            <mi>x</mi>
+            <mo>=</mo>
+            <mi>n</mi>
+            <mo>&#xB7;</mo>
+            <mi>a</mi>
+          </mrow>
+        </mstyle>
+      </math>
+    </center>
+  </p>
+
+  <p style="text-align:justify">
+  On l'amplitud ve donada a partir del fet que l'energia d'oscil&middotlaci&oacute de cada mode &eacutes:
+    <center>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mrow>
+              <mo>&#x27E8;</mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>E</mi>
+              </mrow>
+              <mo>&#x27E9;</mo>
+            </mrow>
+            <mo>=</mo>
+            <mfrac>
+              <mn>1</mn>
+              <mn>2</mn>
+            </mfrac>
+            <msub>
+              <mi>K</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>e</mi>
+                <mi>l</mi>
+              </mrow>
+            </msub>
+            <msubsup>
+              <mi>A</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msubsup>
+          </mrow>
+        </mstyle>
+      </math>
+    </center>
+  </p>
+
+  <p style="text-align:justify">
+  Es presenta a continuaci&oacute la simulaci&oacute del moviment dels &agravetoms en una cadena unidimensional de N &agravetoms:
+  </p>
+
+  <p>&nbsp;</p>
+
+  <center>
+  <img src="AnimationDebye.gif"/>:
+  </center>
+
+  <p>&nbsp;</p>
+
+  <p style="text-align:justify">
+  Es presenta a continuaci&oacute la simulaci&oacute del moviment dels &agravetoms en una cadena unidimensional de N &agravetoms, tot representant l'ona de les seves amplituds:
+  </p>
+
+  <p>&nbsp;</p>
+
+  <center>
+  <img src="AnimationDebyeOna.gif"/>:
+  </center>
+
+  <p>&nbsp;</p>
+
+  <big><U>C&agravelcul de la Calor espec&iacutefica en el model de Debye</U></big>
+  <p style="text-align:justify">
+  El c&agravelcul de la calor espec&iacutefica en el cas del model de Debye s'estudiar&agrave a partir de tres m&egravetodes num&egraverics diferents, l'ess&egravencia del quals
+  acaba essent la mateixa.
+  </p>
+
+  <blockquote>
+    <H4>M&egravetode de l'energia</H4>
+    <p style="text-align:justify">
+    Aquest m&egravetode, de caire m&eacutes num&egraveric, es basa en el fet que l'energia de la cadena ve donada per la suma de l'energia dels diferents &agravetoms (cin&egravetica + potencial).
+        <center>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle displaystyle="true" scriptlevel="0">
+              <mrow class="MJX-TeXAtom-ORD">
+                <msub>
+                  <mrow>
+                    <mo>&#x27E8;</mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>E</mi>
+                    </mrow>
+                    <mo>&#x27E9;</mo>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>c</mi>
+                    <mi>a</mi>
+                    <mi>d</mi>
+                    <mi>e</mi>
+                    <mi>n</mi>
+                    <mi>a</mi>
+                    <mtext>&#xA0;</mtext>
+                    <mi>N</mi>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mi>a</mi>
+                    <mi>t</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mo>&#xF2;</mo>
+                    </mrow>
+                    <mi>m</mi>
+                    <mi>i</mi>
+                    <mi>c</mi>
+                    <mi>a</mi>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>N</mi>
+                  </mrow>
+                </munderover>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>2</mn>
+                    </mfrac>
+                    <mi>m</mi>
+                    <msubsup>
+                      <mi>v</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msubsup>
+                    <mo>+</mo>
+                    <mfrac>
+                      <mn>1</mn>
+                      <mn>2</mn>
+                    </mfrac>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>e</mi>
+                        <mi>l</mi>
+                      </mrow>
+                    </msub>
+                    <msubsup>
+                      <mi>x</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>i</mi>
+                      </mrow>
+                      <mn>2</mn>
+                    </msubsup>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </mstyle>
+          </math>
+        </center>
+    </p>
+
+    on x<sub>i</sub> ve donada per la part real de l'exponencial anterior, i v<sub>i</sub> n'&eacutes la derivada, &eacutes a dir:
+        <center>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle displaystyle="true" scriptlevel="0">
+              <mrow class="MJX-TeXAtom-ORD">
+                <msub>
+                  <mi>x</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>N</mi>
+                  </mrow>
+                </munderover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mi>cos</mi>
+                <mo>&#x2061;<!-- ⁡ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>w</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                  <mo>&#xB7;</mo>
+                  <mi>t</mi>
+                  <mtext>&#xA0;</mtext>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mtext>&#xA0;</mtext>
+                  <msub>
+                    <mi>k</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                  <mo>&#xB7;</mo>
+                  <mi>x</mi>
+                  <mtext>&#xA0;</mtext>
+                  <mo>+</mo>
+                  <mtext>&#xA0;</mtext>
+                  <msub>
+                    <mi>&#x03D5;<!-- ϕ --></mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>0</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>,</mo>
+              </mrow>
+            </mstyle>
+          </math>
+        </center>
+
+        <center>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle displaystyle="true" scriptlevel="0">
+              <mrow class="MJX-TeXAtom-ORD">
+                <msub>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>i</mi>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <munderover>
+                  <mo>&#x2211;<!-- ∑ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                  </mrow>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>N</mi>
+                  </mrow>
+                </munderover>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>w</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mi>sin</mi>
+                <mo>&#x2061;<!-- ⁡ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>w</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                  <mo>&#xB7;</mo>
+                  <mi>t</mi>
+                  <mtext>&#xA0;</mtext>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mtext>&#xA0;</mtext>
+                  <msub>
+                    <mi>k</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                  <mo>&#xB7;</mo>
+                  <mi>x</mi>
+                  <mtext>&#xA0;</mtext>
+                  <mo>+</mo>
+                  <mtext>&#xA0;</mtext>
+                  <msub>
+                    <mi>&#x03D5;<!-- ϕ --></mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>0</mn>
+                    </mrow>
+                  </msub>
+                  <mo stretchy="false">)</mo>
+                </mrow>
+                <mo>,</mo>
+              </mrow>
+            </mstyle>
+          </math>
+        </center>
+
+        <p style="text-align:justify">
+          De fet, el valor de l'energia, pel fet de ser l'energia de diferents oscil&middotladors, acaba essent independent del temps i la fase,
+          de manera que no cal calcular-la a tots els instants.
+
+          Sabent l'expressi&oacute de l'Energia, podem desenvolupar ara els dos m&egravetodes:
+
+        <p style="text-align:justify">
+          El primer es basa en fer una derivada num&egraverica per molts diferencials de temperatura (dT) de l'expressi&oacute anterior, mentre que el segon deriva anal&iacuteticament l'expressi&oacute de l'energia
+          i calcula el valor de C a partir de les expressions anal&iacutetiques.
+
+          <p>&nbsp;</p>
+
+        <blockquote>
+          <p style="text-align:justify">
+            <U><I>M&egravetode num&egraveric</I></U>
+          </p>
+
+          <p style="text-align:justify">
+            Fent servir el m&egravetode num&egraveric obtenim la seg&uumlent gr&agravefica de la C.
+          </p>
+
+          <center>
+          <img src="numerical_01.png"/>:
+          </center>
+
+
+          <p style="text-align:justify">
+            Vegeu el codi MATLAB&reg del c&agravelcul de la calor espec&iacutefica amb el m&egravetode num&egraveric <a href=numerical.html>(codi MATLAB)</a>.
+          </p>
+
+          <p>&nbsp;</p>
+
+          <p style="text-align:justify">
+            <U><I>M&egravetode Anal&iacutetic</I></U>
+          </p>
+
+          <p style="text-align:justify">
+            El m&egravetode anal&iacutetic es basa en derivar directament l'expressi&oacute de l'energia de la cadena. L'expressi&oacute que s'obt&eacute &eacutes doncs:
+          <center>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle displaystyle="true" scriptlevel="0">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msub>
+                    <mi>C</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>c</mi>
+                      <mi>a</mi>
+                      <mi>d</mi>
+                      <mi>e</mi>
+                      <mi>n</mi>
+                      <mi>a</mi>
+                      <mtext>&#xA0;</mtext>
+                      <mn>1</mn>
+                      <mi>D</mi>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mo fence="false" stretchy="false">&#x27E8;<!-- ⟨ --></mo>
+                      <mi>E</mi>
+                      <msub>
+                        <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>c</mi>
+                          <mi>a</mi>
+                          <mi>d</mi>
+                          <mi>e</mi>
+                          <mi>n</mi>
+                          <mi>a</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>T</mi>
+                    </mrow>
+                  </mfrac>
+                  <mo>=</mo>
+                  <munderover>
+                    <mo>&#x2211;<!-- ∑ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>i</mi>
+                      <mo>=</mo>
+                      <mn>0</mn>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>N</mi>
+                    </mrow>
+                  </munderover>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <mi>m</mi>
+                      <msub>
+                        <mi>v</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                      <mfrac>
+                        <mrow>
+                          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                          <msub>
+                            <mi>v</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                          <mi>T</mi>
+                        </mrow>
+                      </mfrac>
+                      <mo>+</mo>
+                      <msub>
+                        <mi>K</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>e</mi>
+                          <mi>l</mi>
+                        </mrow>
+                      </msub>
+                      <msub>
+                        <mi>x</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                      <mfrac>
+                        <mrow>
+                          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                          <msub>
+                            <mi>x</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>i</mi>
+                            </mrow>
+                          </msub>
+                        </mrow>
+                        <mrow>
+                          <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                          <mi>T</mi>
+                        </mrow>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mstyle>
+            </math>
+          </center>
+          </p>
+
+          <p style="text-align:justify">
+          Les expressions de les derivades de x<sub>i</sub> i v<sub>i</sub> s&oacuten, respectivament:
+          <center>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle displaystyle="true" scriptlevel="0">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <msub>
+                        <mi>x</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>T</mi>
+                    </mrow>
+                  </mfrac>
+                  <mo>=</mo>
+                  <munderover>
+                    <mo>&#x2211;<!-- ∑ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>=</mo>
+                      <mn>0</mn>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>N</mi>
+                    </mrow>
+                  </munderover>
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <msub>
+                        <mi>A</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>T</mi>
+                    </mrow>
+                  </mfrac>
+                  <mi>cos</mi>
+                  <mo>&#x2061;<!-- ⁡ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>w</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>t</mi>
+                    <mtext>&#xA0;</mtext>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mtext>&#xA0;</mtext>
+                    <msub>
+                      <mi>k</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>x</mi>
+                    <mtext>&#xA0;</mtext>
+                    <mo>+</mo>
+                    <mtext>&#xA0;</mtext>
+                    <msub>
+                      <mi>&#x03D5;<!-- ϕ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>0</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mrow>
+              </mstyle>
+            </math>
+          </center>
+
+          <center>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle displaystyle="true" scriptlevel="0">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <msub>
+                        <mi>v</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>i</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>T</mi>
+                    </mrow>
+                  </mfrac>
+                  <mo>=</mo>
+                  <munderover>
+                    <mo>&#x2211;<!-- ∑ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>=</mo>
+                      <mn>0</mn>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>N</mi>
+                    </mrow>
+                  </munderover>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <msub>
+                        <mi>A</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>T</mi>
+                    </mrow>
+                  </mfrac>
+                  <msub>
+                    <mi>w</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                  <mi>sin</mi>
+                  <mo>&#x2061;<!-- ⁡ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mo stretchy="false">(</mo>
+                    <msub>
+                      <mi>w</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>t</mi>
+                    <mtext>&#xA0;</mtext>
+                    <mo>&#x2212;<!-- − --></mo>
+                    <mtext>&#xA0;</mtext>
+                    <msub>
+                      <mi>k</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>x</mi>
+                    <mtext>&#xA0;</mtext>
+                    <mo>+</mo>
+                    <mtext>&#xA0;</mtext>
+                    <msub>
+                      <mi>&#x03D5;<!-- ϕ --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>0</mn>
+                      </mrow>
+                    </msub>
+                    <mo stretchy="false">)</mo>
+                  </mrow>
+                  <mo>,</mo>
+                </mrow>
+              </mstyle>
+            </math>
+          </center>
+          </p>
+
+          <p style="text-align:justify">
+          Les expressions anal&iacutetiques per les derivades respecte la temperatura de l'amplitud i l'energia de cada mode s&oacuten:
+          <center>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle displaystyle="true" scriptlevel="0">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mspace linebreak="newline" />
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <msub>
+                        <mi>A</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>T</mi>
+                    </mrow>
+                  </mfrac>
+                  <mo>=</mo>
+                  <mfrac>
+                    <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>T</mi>
+                    </mrow>
+                  </mfrac>
+                  <mrow>
+                    <mo>[</mo>
+                    <mrow>
+                      <msqrt>
+                        <mfrac>
+                          <mrow>
+                            <mn>2</mn>
+                            <msub>
+                              <mrow>
+                                <mo>&#x27E8;</mo>
+                                <mrow class="MJX-TeXAtom-ORD">
+                                  <mi>E</mi>
+                                </mrow>
+                                <mo>&#x27E9;</mo>
+                              </mrow>
+                              <mrow class="MJX-TeXAtom-ORD">
+                                <mi>n</mi>
+                              </mrow>
+                            </msub>
+                          </mrow>
+                          <msub>
+                            <mi>K</mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>e</mi>
+                              <mi>l</mi>
+                            </mrow>
+                          </msub>
+                        </mfrac>
+                      </msqrt>
+                      <mtext>&#xA0;</mtext>
+                    </mrow>
+                    <mo>]</mo>
+                  </mrow>
+                  <mo>=</mo>
+                  <mfrac>
+                    <mn>1</mn>
+                    <msqrt>
+                      <mn>2</mn>
+                      <msub>
+                        <mrow>
+                          <mo>&#x27E8;</mo>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>E</mi>
+                          </mrow>
+                          <mo>&#x27E9;</mo>
+                        </mrow>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msub>
+                      <msub>
+                        <mi>K</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>e</mi>
+                          <mi>l</mi>
+                        </mrow>
+                      </msub>
+                    </msqrt>
+                  </mfrac>
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <msub>
+                        <mrow>
+                          <mo>&#x27E8;</mo>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>E</mi>
+                          </mrow>
+                          <mo>&#x27E9;</mo>
+                        </mrow>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>T</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mstyle>
+            </math>
+          </center>
+
+          <center>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle displaystyle="true" scriptlevel="0">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <msub>
+                        <mrow>
+                          <mo>&#x27E8;</mo>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>E</mi>
+                          </mrow>
+                          <mo>&#x27E9;</mo>
+                        </mrow>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                    <mrow>
+                      <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                      <mi>T</mi>
+                    </mrow>
+                  </mfrac>
+                  <mo>=</mo>
+                  <msub>
+                    <mi>K</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>B</mi>
+                    </mrow>
+                  </msub>
+                  <msup>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mi>&#x03B2;<!-- β --></mi>
+                        <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                        <msub>
+                          <mi>&#x03C9;<!-- ω --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>n</mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mn>2</mn>
+                    </mrow>
+                  </msup>
+                  <mtext>&#xA0;</mtext>
+                  <mfrac>
+                    <msup>
+                      <mi>e</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>&#x03B2;<!-- β --></mi>
+                        <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                        <msub>
+                          <mi>&#x03C9;<!-- ω --></mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>n</mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </msup>
+                    <mrow>
+                      <mo stretchy="false">(</mo>
+                      <msup>
+                        <mi>e</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>&#x03B2;<!-- β --></mi>
+                          <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                          <msub>
+                            <mi>&#x03C9;<!-- ω --></mi>
+                            <mrow class="MJX-TeXAtom-ORD">
+                              <mi>n</mi>
+                            </mrow>
+                          </msub>
+                        </mrow>
+                      </msup>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                      <msup>
+                        <mo stretchy="false">)</mo>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msup>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mstyle>
+            </math>
+          </center>
+          </p>
+
+          <p style="text-align:justify">
+          A continuaci&oacute, mostrem la C representada en funci&oacute de T obtinguda num&egravericament aplicant les anteirors expressions anal&iacutetiques.
+          </p>
+
+          <center>
+          <img src="guillem_01.png" />:
+          </center>
+
+          <p style="text-align:justify">
+          Vegeu el codi MATLAB&reg del c&agravelcul de la calor espec&iacutefica amb el m&egravetode anal&iacutetic <a href=guillem.html>(codi MATLAB)</a>.
+          </p>
+
+          <p>&nbsp;</p>
+      </blockquote>
+
+      <H4>M&egravetode directe</H4>
+
+      <p style="text-align:justify">
+      Aquest m&egravetode, de caire m&eacutes anal&iacutetic, es basa en el fet que l'energia de la cadena ve donada tamb&eacute per la suma de l'energia dels diferents oscil&middotladors
+      dels modes normals.
+          <center>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle displaystyle="true" scriptlevel="0">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <msub>
+                    <mrow>
+                      <mo>&#x27E8;</mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>E</mi>
+                      </mrow>
+                      <mo>&#x27E9;</mo>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>c</mi>
+                      <mi>a</mi>
+                      <mi>d</mi>
+                      <mi>e</mi>
+                      <mi>n</mi>
+                      <mi>a</mi>
+                      <mtext>&#xA0;</mtext>
+                      <mi>N</mi>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mi>a</mi>
+                      <mi>t</mi>
+                        <mi>&#xF2</mi>
+                      <mi>m</mi>
+                      <mi>i</mi>
+                      <mi>c</mi>
+                      <mi>a</mi>
+                    </mrow>
+                  </msub>
+                  <mo>=</mo>
+                  <munderover>
+                    <mo>&#x2211;<!-- ∑ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                      <mo>=</mo>
+                      <mn>0</mn>
+                    </mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>N</mi>
+                    </mrow>
+                  </munderover>
+                  <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                  <msub>
+                    <mi>&#x03C9;<!-- ω --></mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                  <mrow>
+                    <mo>(</mo>
+                    <mrow>
+                      <msub>
+                        <mi>n</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>B</mi>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">(</mo>
+                      <mi>&#x03B2;<!-- β --></mi>
+                      <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                      <msub>
+                        <mi>&#x03C9;<!-- ω --></mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msub>
+                      <mo stretchy="false">)</mo>
+                      <mo>+</mo>
+                      <mfrac>
+                        <mn>1</mn>
+                        <mn>2</mn>
+                      </mfrac>
+                    </mrow>
+                    <mo>)</mo>
+                  </mrow>
+                </mrow>
+              </mstyle>
+            </math>
+          </center>
+      </p>
+
+      <p style="text-align:justify">
+      A partir d'aqu&iacute s'en troba la calor espec&iacutefica derivant respecte de T i s'obt&eacute:
+          <center>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>C</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>c</mi>
+                <mi>a</mi>
+                <mi>d</mi>
+                <mi>e</mi>
+                <mi>n</mi>
+                <mi>a</mi>
+                <mtext>&#xA0;</mtext>
+                <mn>1</mn>
+                <mi>D</mi>
+              </mrow>
+            </msub>
+            <mo>=</mo>
+            <mfrac>
+              <mrow>
+                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                <mo fence="false" stretchy="false">&#x27E8;<!-- ⟨ --></mo>
+                <mi>E</mi>
+                <msub>
+                  <mo fence="false" stretchy="false">&#x27E9;<!-- ⟩ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>c</mi>
+                    <mi>a</mi>
+                    <mi>d</mi>
+                    <mi>e</mi>
+                    <mi>n</mi>
+                    <mi>a</mi>
+                  </mrow>
+                </msub>
+              </mrow>
+              <mrow>
+                <mi mathvariant="normal">&#x2202;<!-- ∂ --></mi>
+                <mi>T</mi>
+              </mrow>
+            </mfrac>
+            <mo>=</mo>
+            <munderover>
+              <mo>&#x2211;<!-- ∑ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>N</mi>
+              </mrow>
+            </munderover>
+            <msub>
+              <mi>K</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>B</mi>
+              </mrow>
+            </msub>
+            <msup>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mi>&#x03B2;<!-- β --></mi>
+                  <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                  <msub>
+                    <mi>&#x03C9;<!-- ω --></mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+            <mtext>&#xA0;</mtext>
+            <mfrac>
+              <msup>
+                <mi>e</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>&#x03B2;<!-- β --></mi>
+                  <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                  <msub>
+                    <mi>&#x03C9;<!-- ω --></mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>n</mi>
+                    </mrow>
+                  </msub>
+                </mrow>
+              </msup>
+              <mrow>
+                <mo stretchy="false">(</mo>
+                <msup>
+                  <mi>e</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>&#x03B2;<!-- β --></mi>
+                    <mi class="MJX-variant">&#x210F;<!-- ℏ --></mi>
+                    <msub>
+                      <mi>&#x03C9;<!-- ω --></mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </msup>
+                <mo>&#x2212;<!-- − --></mo>
+                <mn>1</mn>
+                <msup>
+                  <mo stretchy="false">)</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msup>
+              </mrow>
+            </mfrac>
+          </mrow>
+        </mstyle>
+            </math>
+          </center>
+      </p>
+
+      <p style="text-align:justify">
+      Si es fa el l&iacutemit de la C quan T tendeix a infinit, s'obtenen tal com s'esperava els resultats que previa la Llei de Dulong i Petit.
+          <center>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+              <mstyle displaystyle="true" scriptlevel="0">
+              <mrow class="MJX-TeXAtom-ORD">
+                <munder>
+                  <mo movablelimits="true" form="prefix">lim</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>T</mi>
+                    <mo stretchy="false">&#x2192;<!-- → --></mo>
+                    <mi mathvariant="normal">&#x221E;<!-- ∞ --></mi>
+                  </mrow>
+                </munder>
+                <mrow>
+                  <mo>(</mo>
+                  <mfrac>
+                    <msub>
+                      <mi>C</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>c</mi>
+                        <mi>a</mi>
+                        <mi>d</mi>
+                        <mi>e</mi>
+                        <mi>n</mi>
+                        <mi>a</mi>
+                        <mtext>&#xA0;</mtext>
+                        <mn>1</mn>
+                        <mi>D</mi>
+                      </mrow>
+                    </msub>
+                    <msub>
+                      <mi>K</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>B</mi>
+                      </mrow>
+                    </msub>
+                  </mfrac>
+                  <mo>)</mo>
+                </mrow>
+                <mo>=</mo>
+                <mi>N</mi>
+              </mrow>
+              </mstyle>
+            </math>
+          </center>
+      </p>
+
+      <p style="text-align:justify">
+        A continuaci&oacute, es mostra la representaci&oacute gr&agravefica de la C en funci&oacute de la T.
+      </p>
+
+      <center>
+      <img src="analiticdispersio_01.png" />:
+      </center>
+
+      <p style="text-align:justify">
+        Vegeu el codi MATLAB&reg que desenvolupa el m&egravetode directe <a href=analiticdispersio.html>(codi MATLAB)</a>.
+      </p>
+
+      <p>&nbsp;</p>
+</blockquote>
+
+
+<H4>Discussi&oacute model de Debye</H4>
+
+  <p style="text-align:justify">
+    El model de Debye aconsegueix ajustar-se a temperatures baixes a la depend&egravencia experimental a T<sup>3</sup> i a temperatures altes segueix
+    complint les prediccions de la Llei de Dulong i Petit. Tanmateix, ofereix problemes pel que fa a temperatures mitjanes. Aix&iacute mateix, el model
+    encerta el fet que la major part de les contribucions a C s&oacuten degudes a les vibracions &agravetomiques.
+
+    Tanmateix &eacutes un model lleugerament poc rigur&oacutes i presenta algunes imperfeccions. Per aquesta ra&oacute, el model de Debye fou succe&iumlt per d'altres
+    models que van permetre un estudi m&eacutes acurat de l'estructura interna i el comportament dels s&ogravelids.
+
+  </p>
+
+<p>&nbsp;</p>
+
+<H4>Comparativa Debye i Einstein</H4>
+<p style="text-align:justify">
+  A continuaci&oacute, mostrem una gr&agravefica representant les calors espec&iacutfiques calculades pel model d'Einstein
+  fent la derivada num&egraverica i fent servir l'expressi&oacute anal&iacutetica, en front de l'obtinguda pel model de Debye.
+
+  Sabem que el model de Debye aproxima una mica millor que Einstein la Calor espec&iacutefica i, de fet, aquesta difer&egravencia &eacutes
+  la que podem observar a l'esmentada gr&agravefica.
+</p>
+
+<center>
+<img src="SpecificHeat_01.png" />:
+</center>
+
+<p style="text-align:justify">
+  Vegeu el codi MATLAB&reg que desenvolupa la comparativa <a href=SpecificHeat.html>(codi MATLAB)</a>.
+</p>
+
+
+
+  </div>
+
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+  <Hr><center>
+    <p><SMALL>
+      Barcelona, Abril 2017. Tots els drets reservats &copy.
+    </SMALL></p>
+    <p><SMALL>
+      Treballs Bosch-Megias-Pascual.
+    </SMALL></p>
+  </center></Hr>
+
+</body>
+</html>
