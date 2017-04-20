@@ -1,0 +1,185 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Einstein</title><meta name="generator" content="MATLAB 7.11"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2017-04-19"><meta name="DC.source" content="Einstein.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="comment">% Model d'Einstein</span>
+clear <span class="string">all</span>
+T=273;
+a = 5*10^(-10); <span class="comment">% Par&agrave;metre de xarxa</span>
+C = 2; 			<span class="comment">% Constant el&agrave;stica</span>
+m = 4*10^(-26); <span class="comment">% Massa</span>
+h = 6.62606957*10^(-34); <span class="comment">% Constant de Planck</span>
+h_d = h/(2*pi); <span class="comment">% Constant de Dirac</span>
+k_b = 1.38064852*10^(-23); <span class="comment">% Constant de Boltzmann</span>
+
+N=8; <span class="comment">% Nombre d'&agrave;toms del s&ograve;lid</span>
+L=N*a; <span class="comment">% Longitud del s&ograve;lid</span>
+w=ones(N,1).*1e14; <span class="comment">% Prenem una pulsaci&oacute; arbitr&agrave;ria</span>
+phi = rand(N,1)*2*pi; <span class="comment">% Fase aleat&Atilde;&sup2;ria.</span>
+
+beta = 1./(k_b*T); <span class="comment">% Factor beta</span>
+n_b = 1./(exp(beta.*h_d.*w) - 1); <span class="comment">% Factor d'ocupaci&oacute; de Bose</span>
+E = h_d.*w.*(n_b+.5); <span class="comment">% Energia de l'oscilador harm&ograve;nic</span>
+E(1) = 1/beta; <span class="comment">% Indeterminaci&Atilde;&sup3; quan w = 0.</span>
+A = sqrt(2.*E./C); <span class="comment">% Amplitud.</span>
+
+<span class="comment">% Animaci&Atilde;&sup3; del s&Atilde;&sup2;lid.</span>
+exl = -N*round(A(1).*1e12)/(1e12); <span class="comment">% Extrem per l'esquerra.</span>
+exr = round(A(end).*1e12)/(1e12) + N*a; <span class="comment">% Extrem per la dreta.</span>
+
+
+figure(1)
+
+<span class="comment">% Desenvolupament en el temps.</span>
+
+dt = 0.5*10^(-14); <span class="comment">% Diferencial de temps.</span>
+
+<span class="keyword">for</span> t = 0:dt:0.5*10^(-11)
+
+	x = [];
+	<span class="keyword">for</span> n = 0:N-1 <span class="comment">% Posici&Atilde;&sup3; dels &Atilde;&nbsp;toms.</span>
+
+		xn = n*a;
+		yn = A(n+1).*cos(w(n+1).*t + phi(n+1)); <span class="comment">% Sumatori de totes les exponencials.</span>
+		x(n+1) = xn + yn;
+
+	<span class="keyword">end</span>
+	plot(x,zeros(1,length(x)), <span class="string">'.r'</span>,<span class="string">'Markersize'</span>, 30); hold <span class="string">on</span>;   <span class="comment">% Disseny del gr&Atilde;&nbsp;fic.</span>
+	grid <span class="string">on</span>;
+	axis([exl exr -2*10^(-10) 2*10^(-10)]);
+	str = sprintf(<span class="string">'Model del Solid de Einstein en 1D amb %i Atoms'</span>,N);
+	title(str);
+	xlabel(<span class="string">'Posicions'</span>);
+	ylabel(<span class="string">'Desplacament'</span>);
+	<span class="keyword">for</span> n = 0:N-1 <span class="comment">% Posicions d'equilibri</span>
+
+		line([n*a n*a], [-1 1], <span class="string">'Color'</span>, <span class="string">'black'</span>, <span class="string">'LineStyle'</span>, <span class="string">'-'</span>);
+
+    <span class="keyword">end</span>
+    drawnow; refresh; hold <span class="string">off</span>;
+
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="Einstein_01.png" alt=""> <p class="footer"><br>
+      Published with MATLAB&reg; 7.11<br></p></div><!--
+##### SOURCE BEGIN #####
+% Model d'Einstein
+clear all
+T=273;
+a = 5*10^(-10); % Paràmetre de xarxa
+C = 2; 			% Constant elàstica
+m = 4*10^(-26); % Massa
+h = 6.62606957*10^(-34); % Constant de Planck
+h_d = h/(2*pi); % Constant de Dirac
+k_b = 1.38064852*10^(-23); % Constant de Boltzmann
+
+N=8; % Nombre d'àtoms del sòlid
+L=N*a; % Longitud del sòlid
+w=ones(N,1).*1e14; % Prenem una pulsació arbitrària
+phi = rand(N,1)*2*pi; % Fase aleatÃ²ria.
+
+beta = 1./(k_b*T); % Factor beta
+n_b = 1./(exp(beta.*h_d.*w) - 1); % Factor d'ocupació de Bose
+E = h_d.*w.*(n_b+.5); % Energia de l'oscilador harmònic
+E(1) = 1/beta; % IndeterminaciÃ³ quan w = 0.
+A = sqrt(2.*E./C); % Amplitud.
+
+% AnimaciÃ³ del sÃ²lid.
+exl = -N*round(A(1).*1e12)/(1e12); % Extrem per l'esquerra.
+exr = round(A(end).*1e12)/(1e12) + N*a; % Extrem per la dreta.
+
+
+figure(1)
+
+% Desenvolupament en el temps.
+
+dt = 0.5*10^(-14); % Diferencial de temps.
+
+for t = 0:dt:0.5*10^(-11)
+	
+	x = [];
+	for n = 0:N-1 % PosiciÃ³ dels Ã toms.
+
+		xn = n*a;
+		yn = A(n+1).*cos(w(n+1).*t + phi(n+1)); % Sumatori de totes les exponencials.
+		x(n+1) = xn + yn;
+	
+	end
+	plot(x,zeros(1,length(x)), '.r','Markersize', 30); hold on;   % Disseny del grÃ fic.
+	grid on;
+	axis([exl exr -2*10^(-10) 2*10^(-10)]);
+	str = sprintf('Model del Solid de Einstein en 1D amb %i Atoms',N);
+	title(str);
+	xlabel('Posicions');
+	ylabel('Desplacament');
+	for n = 0:N-1 % Posicions d'equilibri
+
+		line([n*a n*a], [-1 1], 'Color', 'black', 'LineStyle', '-');
+	
+    end
+    drawnow; refresh; hold off;
+	    		
+end
+
+
+##### SOURCE END #####
+--></body></html>
